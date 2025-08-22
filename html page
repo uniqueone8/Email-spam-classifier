@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Spam Classifier</title>
+</head>
+<body>
+    <h1>Email Spam Classifier</h1>
+    <form action="/predict" method="post">
+        <label for="email">Enter Email Text:</label>
+        <textarea id="email" name="email" rows="6" cols="40"></textarea>
+        <br>
+        <input type="submit" value="Classify">
+    </form>
+</body>
+</html>
+//new//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+</head>
+<body>
+    <h1>Classification Result</h1>
+    <p>The email is classified as: <strong>{{ prediction }}</strong></p>
+    <a href="/">Classify another email</a>
+</body>
+</html>
